@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Account | GG Finance</title>
+
+<style>
+
+/* Background */
+
+body {
+
+margin:0;
+
+font-family:'Segoe UI', sans-serif;
+
+background: linear-gradient(to right,#1d2671,#c33764);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+/* Form Container */
+
+.container {
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+width:500px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+/* Title */
+
+h2 {
+
+text-align:center;
+
+color:#1d2671;
+
+}
+
+/* Labels */
+
+label {
+
+font-weight:bold;
+
+display:block;
+
+margin-top:12px;
+
+}
+
+/* Inputs */
+
+input, select {
+
+width:100%;
+
+padding:10px;
+
+margin-top:5px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+font-size:14px;
+
+}
+
+/* Button */
+
+button {
+
+margin-top:20px;
+
+width:100%;
+
+padding:12px;
+
+background:#1d2671;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover {
+
+background:#c33764;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Customer Account</h2>
+
+<form onsubmit="return registerUser()">
+
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Mobile Number</label>
+<input type="text" required>
+
+<label>PAN Number</label>
+<input type="text" required>
+
+<label>Aadhar Number</label>
+<input type="text" required>
+
+<label>Address</label>
+<input type="text" required>
+
+<label>Deposit Amount</label>
+<input type="number" required>
+
+<label>Account Type</label>
+
+<select required>
+
+<option value="">
+Select Account Type
+</option>
+
+<option>
+Savings Deposit
+</option>
+
+<option>
+Fixed Deposit (FD)
+</option>
+
+<option>
+Recurring Deposit (RD)
+</option>
+
+</select>
+
+<label>Create Password</label>
+<input type="password" required>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+function registerUser(){
+
+alert("Account Created Successfully!");
+
+window.location.href="login.html";
+
+return false;
+
+}
+
+</script>
+
+</body>
+
+</html>

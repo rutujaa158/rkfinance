@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Products | R K Finance</title>
+
+<style>
+
+/* Page Background */
+
+body {
+font-family:'Segoe UI', sans-serif;
+margin:0;
+background: linear-gradient(to right,#1d2671,#c33764);
+}
+
+/* Container */
+
+.container {
+
+max-width:1100px;
+margin:40px auto;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+/* Title */
+
+h1 {
+
+text-align:center;
+color:#1d2671;
+margin-bottom:40px;
+
+}
+
+/* Product Grid */
+
+.product-grid {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+/* Cards */
+
+.card {
+
+background:#f5f7fb;
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:0.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.card:hover {
+
+transform:translateY(-8px);
+
+}
+
+/* Icons */
+
+.icon {
+
+font-size:40px;
+
+margin-bottom:15px;
+
+}
+
+/* Button */
+
+.btn {
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:10px 18px;
+
+background:#1d2671;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+.btn:hover {
+
+background:#c33764;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Our Financial Products</h1>
+
+<div class="product-grid">
+
+<!-- Personal Loan -->
+
+<div class="card">
+
+<div class="icon">💳</div>
+
+<h3>Personal Loan</h3>
+
+<p>
+Quick approval personal loans with minimal
+documentation and flexible repayment options.
+</p>
+
+<a href="#" class="btn">
+Apply Now
+</a>
+
+</div>
+
+<!-- Business Loan -->
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>Business Loan</h3>
+
+<p>
+Financial support for small and medium
+businesses to grow and expand operations.
+</p>
+
+<a href="#" class="btn">
+Apply Now
+</a>
+
+</div>
+
+<!-- Home Loan -->
+
+<div class="card">
+
+<div class="icon">🏠</div>
+
+<h3>Home Loan</h3>
+
+<p>
+Affordable home loans with competitive
+interest rates and longer repayment periods.
+</p>
+
+<a href="#" class="btn">
+Apply Now
+</a>
+
+</div>
+
+<!-- Fixed Deposit -->
+
+<div class="card">
+
+<div class="icon">📈</div>
+
+<h3>Fixed Deposit (FD)</h3>
+
+<p>
+Secure your savings with high interest
+returns and flexible tenure options.
+</p>
+
+<a href="#" class="btn">
+Open FD
+</a>
+
+</div>
+
+<!-- Recurring Deposit -->
+
+<div class="card">
+
+<div class="icon">💰</div>
+
+<h3>Recurring Deposit (RD)</h3>
+
+<p>
+Invest small amounts monthly and build
+a strong financial future.
+</p>
+
+<a href="#" class="btn">
+Start RD
+</a>
+
+</div>
+
+<!-- EMI Calculator -->
+
+<div class="card">
+
+<div class="icon">🧮</div>
+
+<h3>EMI Calculator</h3>
+
+<p>
+Calculate your monthly EMI instantly
+before applying for a loan.
+</p>
+
+<a href="calculator.html" class="btn">
+Calculate EMI
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

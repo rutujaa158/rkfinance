@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login | GG Finance</title>
+
+<style>
+
+/* Background */
+
+body {
+
+margin:0;
+font-family:'Segoe UI', sans-serif;
+
+background: linear-gradient(to right,#1d2671,#c33764);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+
+}
+
+/* Login Card */
+
+.login-container {
+
+background:white;
+
+padding:35px;
+
+border-radius:15px;
+
+width:350px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+text-align:center;
+
+}
+
+/* Logo */
+
+.logo {
+
+font-size:26px;
+
+font-weight:bold;
+
+color:#1d2671;
+
+margin-bottom:10px;
+
+}
+
+/* Subtitle */
+
+.subtitle {
+
+color:#666;
+
+margin-bottom:25px;
+
+}
+
+/* Labels */
+
+label {
+
+display:block;
+
+text-align:left;
+
+font-weight:bold;
+
+margin-top:12px;
+
+}
+
+/* Input Fields */
+
+input {
+
+width:100%;
+
+padding:12px;
+
+margin-top:5px;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+font-size:15px;
+
+}
+
+/* Button */
+
+button {
+
+width:100%;
+
+margin-top:20px;
+
+padding:12px;
+
+background:#1d2671;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover {
+
+background:#c33764;
+
+}
+
+/* Footer Text */
+
+.footer-text {
+
+margin-top:15px;
+
+font-size:13px;
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+<div class="logo">
+GG Finance
+</div>
+
+<div class="subtitle">
+Admin Portal Login
+</div>
+
+<form onsubmit="return adminLogin()">
+
+<label>Username</label>
+<input type="text"
+id="username"
+placeholder="Enter Username"
+required>
+
+<label>Password</label>
+<input type="password"
+id="password"
+placeholder="Enter Password"
+required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+<div class="footer-text">
+Authorized Admin Access Only
+</div>
+
+</div>
+
+<script>
+
+function adminLogin(){
+
+let user =
+document.getElementById("username").value;
+
+let pass =
+document.getElementById("password").value;
+
+/* Login Validation */
+
+if(user==="admin" &&
+pass==="admin123"){
+
+window.location.href =
+"dashboard.html";
+
+}
+
+else{
+
+alert("Invalid Username or Password");
+
+}
+
+return false;
+
+}
+
+</script>
+
+</body>
+
+</html>

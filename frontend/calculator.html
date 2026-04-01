@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EMI Calculator | R K Finance</title>
+
+<style>
+
+/* Page Background */
+
+body {
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(to right,#1d2671,#c33764);
+margin:0;
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+}
+
+/* Card Design */
+
+.container {
+
+background:white;
+padding:35px;
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+width:350px;
+
+}
+
+/* Title */
+
+h2 {
+
+text-align:center;
+color:#1d2671;
+margin-bottom:25px;
+
+}
+
+/* Labels */
+
+label {
+
+font-weight:bold;
+display:block;
+margin-top:10px;
+
+}
+
+/* Inputs */
+
+input {
+
+width:100%;
+padding:10px;
+
+margin-top:5px;
+border-radius:8px;
+
+border:1px solid #ccc;
+
+font-size:15px;
+
+}
+
+/* Button */
+
+button {
+
+width:100%;
+
+margin-top:20px;
+
+padding:12px;
+
+background:#1d2671;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover {
+
+background:#c33764;
+
+}
+
+/* Result */
+
+.result {
+
+margin-top:20px;
+
+padding:15px;
+
+background:#f5f7fb;
+
+border-radius:10px;
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:bold;
+
+color:#1d2671;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>EMI Calculator</h2>
+
+<label>Loan Amount (₹)</label>
+<input type="number" id="amount"
+placeholder="Enter Loan Amount">
+
+<label>Interest Rate (%)</label>
+<input type="number" id="rate"
+placeholder="Enter Interest Rate">
+
+<label>Loan Tenure (Months)</label>
+<input type="number" id="months"
+placeholder="Enter Months">
+
+<button onclick="calculateEMI()">
+Calculate EMI
+</button>
+
+<div class="result"
+id="result">
+
+Your EMI will appear here
+
+</div>
+
+</div>
+
+<script>
+
+function calculateEMI() {
+
+let p =
+document.getElementById("amount").value;
+
+let r =
+document.getElementById("rate").value/12/100;
+
+let n =
+document.getElementById("months").value;
+
+/* Validation */
+
+if(p=="" || r=="" || n=="") {
+
+alert("Please fill all fields");
+
+return;
+
+}
+
+let emi =
+(p*r*Math.pow(1+r,n)) /
+(Math.pow(1+r,n)-1);
+
+document.getElementById("result")
+.innerHTML =
+"Monthly EMI = ₹ " +
+emi.toFixed(2);
+
+}
+
+</script>
+
+</body>
+
+</html>

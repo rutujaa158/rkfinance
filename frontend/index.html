@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>R K Finance | Home</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* Reset */
+
+body {
+margin:0;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0a1f44;
+padding:15px 40px;
+color:white;
+}
+
+nav h2 {
+margin:0;
+}
+
+nav ul {
+list-style:none;
+display:flex;
+margin:0;
+padding:0;
+}
+
+nav ul li {
+margin-left:25px;
+}
+
+nav a {
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover {
+color:#ffd700;
+}
+
+/* Hero */
+
+.hero {
+
+height:90vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+background: linear-gradient(to right,#1d2671,#c33764);
+
+}
+
+.hero h1 {
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p {
+font-size:18px;
+margin-bottom:30px;
+}
+
+/* Buttons */
+
+.buttons {
+display:flex;
+gap:15px;
+}
+
+.btn,
+.btn2 {
+
+padding:12px 28px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:0.3s;
+
+}
+
+.btn {
+background:white;
+color:black;
+}
+
+.btn:hover {
+background:#ffd700;
+}
+
+.btn2 {
+background:#ffd700;
+color:black;
+}
+
+.btn2:hover {
+background:white;
+}
+
+/* Services Section */
+
+.services {
+
+padding:60px 40px;
+
+text-align:center;
+
+background:#f5f7fb;
+
+}
+
+.services h2 {
+margin-bottom:40px;
+color:#1d2671;
+}
+
+.service-box {
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.card {
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+.card:hover {
+
+transform:translateY(-8px);
+
+}
+
+/* Why Choose Us */
+
+.why {
+
+padding:60px 40px;
+
+text-align:center;
+
+}
+
+.why h2 {
+
+color:#1d2671;
+
+margin-bottom:30px;
+
+}
+
+.why p {
+
+max-width:700px;
+
+margin:auto;
+
+font-size:17px;
+
+}
+
+/* Footer */
+
+footer {
+
+background:#0a1f44;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:40px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>R K Finance</h2>
+
+<ul>
+<li><a href="about.html">About Us</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="calculator.html">Calculator</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="investor.html">Investor Relations</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h1>Welcome to R K Finance</h1>
+
+<p>
+Trusted Non-Banking Financial Company
+Providing Quick & Secure Loans
+</p>
+
+<div class="buttons">
+
+<a href="admin/admin-login.html" class="btn">
+Admin Login
+</a>
+
+<a href="customer/login.html" class="btn2">
+Customer Login
+</a>
+
+</div>
+
+</section>
+
+<!-- Services -->
+
+<section class="services">
+
+<h2>Our Financial Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<h3>Personal Loan</h3>
+<p>
+Quick approval loans with minimal documents.
+</p>
+</div>
+
+<div class="card">
+<h3>Business Loan</h3>
+<p>
+Financial support for small & medium businesses.
+</p>
+</div>
+
+<div class="card">
+<h3>Fixed Deposit</h3>
+<p>
+Secure investments with high returns.
+</p>
+</div>
+
+<div class="card">
+<h3>EMI Calculator</h3>
+<p>
+Calculate EMI instantly for your loans.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Why Choose Us -->
+
+<section class="why">
+
+<h2>Why Choose R K Finance?</h2>
+
+<p>
+
+R K Finance provides reliable and customer-friendly
+financial services. We focus on transparency,
+quick loan approvals, and secure investment
+opportunities for our customers.
+
+</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+© 2026 R K Finance Pvt Ltd | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+
+</html>
